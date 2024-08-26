@@ -50,7 +50,7 @@ class DtqnAgent(DqnAgent):
             grad_norm_clip,
             target_update_frequency,
         )
-        self.`history` = history
+        self.history = history
         self.train_context = Context(
             context_len,
             obs_mask,
