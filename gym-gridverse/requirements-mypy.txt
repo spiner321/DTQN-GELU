@@ -1,0 +1,5 @@
+-r requirements-setup.txt
+mypy==1.4.1
+types-PyYAML==6.0.12.11
+types-setuptools==68.0.0.3
+types-six==1.16.21.9

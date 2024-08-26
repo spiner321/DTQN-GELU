@@ -1,0 +1,35 @@
+state_space:
+  objects: [ Wall, Floor, coin_env:Coin ]
+  colors: [ NONE ]
+
+action_space:
+  - MOVE_FORWARD
+  - MOVE_BACKWARD
+  - MOVE_LEFT
+  - MOVE_RIGHT
+  - TURN_LEFT
+  - TURN_RIGHT
+
+observation_space:
+  objects: [ Wall, Floor, coin_env:Coin ]
+  colors: [ NONE ]
+
+reset_function:
+  name: coin_env:coin_maze
+
+transition_functions:
+  - name: move_agent
+  - name: turn_agent
+  - name: coin_env:collect_coin_transition
+
+reward_functions:
+  - name: living_reward
+    reward: -0.1
+  - name: coin_env:collect_coin_reward
+
+observation_function:
+  name: partially_occluded
+  area: [ [ -6, 0 ], [-3, 3 ] ]
+
+terminating_function:
+  name: coin_env:no_more_coins

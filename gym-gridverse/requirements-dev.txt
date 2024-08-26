@@ -1,0 +1,12 @@
+-r requirements-setup.txt
+-r requirements-black.txt
+-r requirements-flake8.txt
+-r requirements-isort.txt
+-r requirements-mypy.txt
+-r requirements-pytest.txt
+bump2version==1.0.1
+coverage==6.0.2
+ipdb==0.13.13
+tox==4.6.4
+twine==3.2.0
+watchdog==0.10.3
