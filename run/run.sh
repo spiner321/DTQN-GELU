@@ -10,10 +10,11 @@ python run.py \
     --layers 4 \
     --heads 16 \
     --in-embed 256 \
-    --context 200 \
-    --history 200 \
-    --buf-size 2000000 \
-    --project-name DTQN-test-custom-1
+    --context 100 \
+    --history 100 \
+    --buf-size 1000000 \
+    --project-name DTQN-GELU-test-custom-2 \
+    --discount 0.95
     # --lr 0.01 \
     # --bag-size 32 \
     # --disable-wandb \
